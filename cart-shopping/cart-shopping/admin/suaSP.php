@@ -2,7 +2,8 @@
 		include "connect.php";
 
 		$show = mysqli_query($data, "SELECT * FROM `category`");
-
+		$cate = mysqli_fetch_array($show);
+		$id = $cate['id'];
 		if(isset($_GET['id'])){
 			$id_edit	= $_GET['id'];
 			$category		= mysqli_query($data, "SELECT products.*, category.name AS `name_cate`
@@ -65,9 +66,14 @@
 <?php
 		require"header.php";
 ?>
-
+<style>
+	<?php
+		include "style.css";
+	?>
+</style>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+
 rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <div class="sidebar">
 		<ul class="sidebar-nav">
@@ -120,14 +126,11 @@ rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0s
 					<option value="" selected ><?= $row['name_cate']  ?></option>
 					<?php
 							foreach ($show as $value){
-								?>
-							<option value="<?= $value['id'] ?>">
-								<?php
-									echo $value['name'];
-								?>
-							</option>
-							<?php }
-							?>
+								if($idcate == $id)
+									echo '<option value="'.$id.'" selected>'.$value['name'].'</option>';
+									else echo '<option value="'.$id.'">' .$value['name'].'</option>';
+							 }
+					?>
 					</select>
 				</div>
 				<div class="form-group">
@@ -153,6 +156,7 @@ rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0s
 				</div>
 				<div class="form-group mt-3 ">
 					<button type="submit" name="sm" class="btn btn-primary py-2 px-4" id="" >Sửa đổi</button>
+					<button type="submit" class="btn-back" id="" ><a href="http://localhost/cart-shopping/cart-shopping/admin/product.php">Quay lại</a></button>
 				</div>
 			</form>
 			</div>

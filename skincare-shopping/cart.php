@@ -20,7 +20,7 @@ template_header("CART", "index.php?page=home#about", "index.php?page=home#testim
         <i class="bx bxs-to-top ai"></i>
     </a>
 
-    <h1 id="shopping-cart">Shopping cart</h1>
+    <h1 id="shopping-cart">Giỏ hàng</h1>
     <form action="" method="POST">
         <table>
             <thead>

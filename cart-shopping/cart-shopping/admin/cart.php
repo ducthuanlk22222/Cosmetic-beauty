@@ -96,7 +96,7 @@
 								id="icon_<?=$IDorder?>" class="bx bxs-down-arrow"></i></button>
 							</td>
 							<td>
-								<a href="delBill.php?id=<?=$IDorder?>" name="id_order" onClick="return confirm('Bạn có thật sự muốn xóa món hàng này?');">Xóa</a>
+								<!-- <a href="delBill.php?id=<?=$IDorder?>" name="id_order" onClick="return confirm('Bạn có thật sự muốn xóa món hàng này?');">Xóa</a> -->
 							</td>
 						</tr>
 

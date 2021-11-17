@@ -58,28 +58,32 @@
             <ul>
                 <?php while($row = $result->fetch(PDO::FETCH_ASSOC)): ?>
                 <li class="main-product">
-                    <a href="index.php?page=product&id_product=<?=$row['id_product']?>" class="item-wrap botton-up play-on-scroll">
-                        <div class="img-product">
-                            <img name="img_product" class="img-prd"
-                                src="http://localhost/cart-shopping/cart-shopping/uploads/<?=$row['image']?>"
-                                alt="<?=$row['name']?>">
-                        </div>
-                    </a>
-                    <form action="index.php?page=cart" method="POST">
-                        <div class="content-product">
-                            <input type="hidden" name="quantity" value="1" min="1" max="">
-                            <input name="product_id" type="hidden" value="<?=$row['id_product']?>">
+                    <div class="gird_row">
+                        <div class="gird_colums">
                             <a href="index.php?page=product&id_product=<?=$row['id_product']?>" class="item-wrap botton-up play-on-scroll">
-                                <h3 name="name_product" class="content-product-h3"><?=$row['name']?></h3>
-                            </a>
-                            <div class="content-product-deltals">
-                                <div class="price">
-                                    <span class="money"><?=$row['price']?> VNĐ</span>
+                                <div class="img-product">
+                                    <img name="img_product" class="img-prd"
+                                        src="http://localhost/cart-shopping/cart-shopping/uploads/<?=$row['image']?>"
+                                        alt="<?=$row['name']?>">
                                 </div>
-                                <button type="submit" class="btn btn-cart">Thêm Vào Giỏ</button>
-                            </div>
+                            </a>
+                            <form action="index.php?page=cart" method="POST">
+                                <div class="content-product">
+                                    <input type="hidden" name="quantity" value="1" min="1" max="">
+                                    <input name="product_id" type="hidden" value="<?=$row['id_product']?>">
+                                    <a href="index.php?page=product&id_product=<?=$row['id_product']?>" class="item-wrap botton-up play-on-scroll">
+                                        <h3 name="name_product" class="content-product-h3"><?=$row['name']?></h3>
+                                    </a>
+                                    <div class="content-product-deltals">
+                                        <div class="price">
+                                            <span class="money"><?=$row['price']?> VNĐ</span>
+                                        </div>
+                                        <button type="submit" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
-                    </form>
+                    </div>
                 </li>
                 <?php endwhile; ?>
             </ul>

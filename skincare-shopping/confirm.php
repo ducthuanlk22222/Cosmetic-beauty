@@ -63,7 +63,7 @@
 <hr>
 
 <div class="container container-confirm">
-    <h1>Cảm ơn bạn đã đặt hàng tại shop</h1>
+    <h1>Cảm ơn bạn đã đặt hàng tại COSMETIC</h1>
     <h2>Thông tin hóa đơn</h2>
 
     <p style="margin-top:.5rem;"><strong> Order ID: </strong><?=$id_order?></p>

@@ -9,7 +9,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     list-style-type: none;
     text-decoration: none;
     }
@@ -1314,6 +1314,7 @@
     }
 
     .submit{
+        margin: 12px 0;
         width: 8rem;
         height: 2.5rem;
         background:var(--blue);
@@ -1396,3 +1397,19 @@
   .confirm__back button:hover{
       color: #fff   ;
   }
+
+
+  /* css mới  */
+  input[type="number"] {
+    width: 57px;
+    text-align: center;
+    height: 24px;
+}
+
+#shopping-cart{
+    margin-bottom: .5   rem;
+}
+
+.icons-footer .icon-footer{
+    font-size: 2rem;
+}

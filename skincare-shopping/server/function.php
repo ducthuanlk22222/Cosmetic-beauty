@@ -143,6 +143,10 @@ function template_header($title, $info, $testimonial) {
             transform: scale(1);
             transition: .2s linear;
         }
+        .icons-footer .icon-footer{
+            font-size: 2rem;
+            margin-left:.5rem;
+        }
     </style>
 
     <body class="light">
@@ -154,22 +158,22 @@ function template_header($title, $info, $testimonial) {
             <div class="menu">
                 <a href="index.php?page=home">
                     <div class="menu-item">
-                        Trang Chủ
+                        Trang chủ
                     </div>
                 </a>
                 <a href="$info">
                     <div class="menu-item">
-                        Thông Tin
+                        Thông tin
                     </div>
                 </a>
                 <a href="index.php?page=products">
                     <div class="menu-item">
-                        Sản Phẩm
+                        Sản phẩm
                     </div>
                 </a>
                 <a href="$testimonial">
                     <div class="menu-item">
-                        Phản Hồi
+                        Phản hồi
                     </div>
                 </a>
             </div>
@@ -211,10 +215,10 @@ function template_feedBack() {
                             <p>
                                 Sản phẩm rất tuyệt vời
                             </p>
-                            <div class="review-img bg-img" style="background-image: url(http://localhost/cart-shopping/cart-shopping/uploads/truongquynhanh.jpg)"></div>
+                            <div class="review-img bg-img" style="background-image: url(http://localhost/cart-shopping/cart-shopping/uploads/OUQH3790.png)"></div>
                         </div>
                         <div class="review-info">
-                            <h3>Trương Quỳnh Anh</h3>
+                            <h3>Trần Minh Tài</h3>
                             <div class="rating">
                                 <i class="bx bxs-star"></i>
                                 <i class="bx bxs-star"></i>
@@ -232,10 +236,10 @@ function template_feedBack() {
                                 Đây đúng là bí quyết dưỡng da trắng sáng
                                 và căng mịn hay nhất mà mình từng sử dụng
                             </p>
-                            <div class="review-img bg-img" style="background-image: url(http://localhost/cart-shopping/cart-shopping/uploads/phamhuong.jpg)"></div>
+                            <div class="review-img bg-img" style="background-image: url(http://localhost/cart-shopping/cart-shopping/uploads/12678012d2a21afc43b3.jpg)"></div>
                         </div>
                         <div class="review-info">
-                            <h3>Phạm Hương</h3>
+                            <h3>Nguyễn Đức Thuận</h3>
                             <div class="rating">
                                 <i class="bx bxs-star"></i>
                                 <i class="bx bxs-star"></i>
@@ -254,10 +258,10 @@ function template_feedBack() {
                                 sản phẩm của CENLIA sớm
 
                             </p>
-                            <div class="review-img bg-img" style="background-image: url(http://localhost/cart-shopping/cart-shopping/uploads/thaituyettram.jpg)"></div>
+                            <div class="review-img bg-img" style="background-image: url(http://localhost/cart-shopping/cart-shopping/uploads/10f1626823d8eb86b2c9.jpg)"></div>
                         </div>
                         <div class="review-info">
-                            <h3>Thái Tuyết Trâm</h3>
+                            <h3>Đỗ Kim Phong</h3>
                             <div class="rating">
                                 <i class="bx bxs-star"></i>
                                 <i class="bx bxs-star"></i>
@@ -293,9 +297,11 @@ function template_footer(){
                     <h1>
                         THÔNG TIN
                     </h1><br>
-                    <p><a href="#">Mỹ phẩm</a></p>
-                    <p><a href="#">Menu</a></p>
-                    <p><a href="#">News</a></p>
+                    <div class="icons-footer" 
+                    <a href="https://www.facebook.com/taidaya4283125/"><i class='icon-footer bx bxl-facebook-circle'></i></a>
+                    <a href="https://www.instagram.com/conianguys/"><i class='icon-footer bx bxl-instagram-alt' ></i></a>
+                    <a href="#"><i class='icon-footer bx bx-mail-send' ></i></a>
+                    </div>
                 </div>
                
             </div>

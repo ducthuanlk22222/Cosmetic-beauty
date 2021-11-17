@@ -6,6 +6,12 @@
 <?php
 		require "header.php";
 ?>
+
+<style>
+	<?php
+		include "style.css";
+	?>
+</style>
     <div class="sidebar">
 		<ul class="sidebar-nav">
 			<li class="sidebar-nav-item">
@@ -83,10 +89,6 @@
 	   <div class="addpro"><a href="addcate.php" class="btn btn-dark mb-3">Thêm danh mục</a></div>
 	</div>
 </div>
-    <!--firebase-->
-    <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-database.js"></script>
 
 	 <script id="mainScript">
 

@@ -5,6 +5,11 @@
 <?php
 		require "header.php";
 ?>
+<style>
+	<?php
+		include "style.css";
+	?>
+</style>
 		<!-- muc luc -->
     <div class="sidebar">
 		<ul class="sidebar-nav">
