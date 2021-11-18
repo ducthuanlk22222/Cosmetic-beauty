@@ -4,24 +4,24 @@
 		if(isset($_POST['name'])){
 			$id 					= $_POST['id'];
 			$name					= $_POST['name'];
-			$price 				=	$_POST['price'];
-			$description 	= $_POST['description'];
-			$idcate 			= $_POST['idcate'];
+			$price 					=	$_POST['price'];
+			$description 			= $_POST['description'];
+			$idcate 				= $_POST['idcate'];
 			if(isset($_FILES['image'])){
-				$file 			= $_FILES['image'];
-				$file_name 	= $file['name'];
+				$file 				= $_FILES['image'];
+				$file_name 			= $file['name'];
 				move_uploaded_file($file['tmp_name'],'../uploads/'.$file_name);
 			}
 			$sql = "INSERT INTO `products`(`id_product`,`name`, `price`, `image`, `description`, `id_cate`)
-							VALUES ('$id','$name','$price','$file_name','$description','$idcate')";
+									VALUES('$id','$name','$price','$file_name','$description','$idcate')";
 
-			$query 				= mysqli_query($data, $sql);
+			$query 					= mysqli_query($data, $sql);
 			if($query){
 				echo '<script language="javascript">alert("Thêm thành công!");
          window.location.href="http://localhost/cart-shopping/cart-shopping/admin/product.php";</script>';
 			}
 			else{
-				$message 		= "Không thêm được!";
+				$message 			= "Không thêm được!";
 				echo "<script> alert('$message')</script>";
 			}
 		}

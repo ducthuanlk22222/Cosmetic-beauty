@@ -96,7 +96,7 @@
 								id="icon_<?=$IDorder?>" class="bx bxs-down-arrow"></i></button>
 							</td>
 							<td>
-								<!-- <a href="delBill.php?id=<?=$IDorder?>" name="id_order" onClick="return confirm('Bạn có thật sự muốn xóa món hàng này?');">Xóa</a> -->
+								<a href="delBill.php?id=<?=$IDorder?>" name="id_order" onClick="return confirm('Bạn có thật sự muốn xóa món hàng này?');">Xóa</a>
 							</td>
 						</tr>
 
@@ -117,10 +117,10 @@
 
                 <tr>
                     <?php
-                        $product_get = $product['id_product'];
+                        $product_get 	= $product['id_product'];
                         $select_product = "SELECT * FROM `products` WHERE `id_product` = '$product_get'";
-                        $query_select = mysqli_query($data, $select_product);
-                        $fetch_select = mysqli_fetch_array($query_select);
+                        $query_select 	= mysqli_query($data, $select_product);
+                        $fetch_select 	= mysqli_fetch_array($query_select);
                     ?>
                     <td><?=$product['id_order']?></td>
 										<td><?=$product['id_product']?></td>

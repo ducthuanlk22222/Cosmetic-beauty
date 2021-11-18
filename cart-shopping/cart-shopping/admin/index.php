@@ -1,16 +1,7 @@
 <?php
 	require "header.php";
 ?>
-			<!-- <li class="nav-item avt-wrapper">
-				<div class="avt dropdown">
-					<img src="./assets/93.png" alt="User image" class="dropdown-toggle" data-toggle="user-menu">
-				</div>
-			</li> -->
-		<!-- </ul> -->
-
-		<!-- end nav right -->
-	<!-- end navbar -->
-	<!-- sidebar -->
+			
 	<div class="sidebar">
 		<ul class="sidebar-nav">
 			<li class="sidebar-nav-item">
@@ -49,15 +40,10 @@
 					<span>Hóa Đơn</span>
 				</a>
 			</li>
-
-
-
-
-
-
 		</ul>
 	</div>
 	<!-- end sidebar -->
+	
 	<!-- main content -->
 	<div class="wrapper">
 		<div class="row">

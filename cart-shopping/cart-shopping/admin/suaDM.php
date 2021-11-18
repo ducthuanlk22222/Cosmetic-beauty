@@ -2,19 +2,20 @@
 	include "connect.php";
 
   if(isset($_GET['id'])){
-    $id_edit        	= $_GET['id'];
-    $sql              = mysqli_query($data,"SELECT * FROM `category` WHERE `id`='$id_edit'");
-    $row              = mysqli_fetch_array($sql);
+    $id_edit        		= $_GET['id'];
+    $sql              		= mysqli_query($data,"SELECT * FROM `category` WHERE `id`='$id_edit'");
+    $row             		= mysqli_fetch_array($sql);
     $id_categogy			= $row['id'];
-    $name_category 		= $row['name'];
+    $name_category 			= $row['name'];
 
   }
   if(isset($_POST['btn-submit'])){
-    $id_update        = $_POST['id'];
+    $id_update        		= $_POST['id'];
     $id_category			= $_POST['id'];
-    $name_category 	 = $_POST['name'];
-    $sql = "UPDATE `category` SET `id`='$id_category', `name`='$name_category' WHERE `id`='$id_update';";
-    $query = mysqli_query($data, $sql);
+    $name_category 	 		= $_POST['name'];
+    $sql 					= "UPDATE `category` SET `id`='$id_category', `name`='$name_category' 
+    						   WHERE `id`='$id_update';";
+    $query 					= mysqli_query($data, $sql);
   	if($query){
 	    	echo '<script language="javascript">alert("Sửa thành công!");
         window.location.href="http://localhost/cart-shopping/cart-shopping/admin/cate.php";</script>';

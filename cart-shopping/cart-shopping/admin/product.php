@@ -1,6 +1,6 @@
 <?php
 		include "connect.php";
-		$product	= mysqli_query($data, "SELECT products.*, category.name AS name_cate FROM products JOIN category ON products.id_cate = category.id;");
+		$product	= mysqli_query($data, "SELECT products.*, category.name AS name_cate FROM products JOIN category ON 			products.id_cate = category.id;");
 ?>
 <?php
 		require "header.php";

@@ -3,16 +3,16 @@
 
 	if(isset($_POST['name'])){
 		$id				= $_POST['id'];
-		$name 		=	$_POST['name'];
+		$name 			=	$_POST['name'];
 		$sql 			= "INSERT INTO `category`(`id`, `name`) VALUES ('$id','$name')";
 
-		$query		= mysqli_query($data, $sql);
+		$query			= mysqli_query($data, $sql);
 		if($query){
 			echo '<script language="javascript">alert("Thêm danh mục thành công!");
 					window.location.href="http://localhost/cart-shopping/cart-shopping/admin/cate.php";</script>';
 		}
 		else{
-			$message = "Lỗi khi thêm danh mục!";
+			$message 	= "Lỗi khi thêm danh mục!";
 			echo "<script> alert('$message')</script>";
 		}
 	}

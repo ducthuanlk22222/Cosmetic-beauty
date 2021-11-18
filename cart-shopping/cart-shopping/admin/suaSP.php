@@ -1,41 +1,41 @@
 <?php
 		include "connect.php";
 
-		$show = mysqli_query($data, "SELECT * FROM `category`");
-		$cate = mysqli_fetch_array($show);
-		$id = $cate['id'];
+		$show 				= mysqli_query($data, "SELECT * FROM `category`");
+		$cate 				= mysqli_fetch_array($show);
+		$id 					= $cate['id'];
 		if(isset($_GET['id'])){
-			$id_edit	= $_GET['id'];
+			$id_edit		= $_GET['id'];
 			$category		= mysqli_query($data, "SELECT products.*, category.name AS `name_cate`
 									FROM products LEFT JOIN category ON products.id_cate = category.id
 									WHERE products.id_product = '$id_edit';");
 			$row = mysqli_fetch_array($category);
 
-			$id_product 			= $row['id_product'];
+			$id_product 				= $row['id_product'];
 			$name_category 			= $row['name_cate'];
-			$price 					= $row['price'];
+			$price 							= $row['price'];
 			$name_product 			= $row['name'];
-			$description			= $row['description'];
-			$idcate					= $row['id_cate'];
-			$image 					= $row['image'];
+			$description				= $row['description'];
+			$idcate							= $row['id_cate'];
+			$image 							= $row['image'];
 		}
 		if(isset($_POST['sm'])){
-		$id_product 				= $_POST['id'];
+		$id_product 					= $_POST['id'];
 		$name_category 				= $_POST['nameCa'];
-		$price 						= $_POST['price'];
+		$price 								= $_POST['price'];
 		$name_product 				= $_POST['name_product'];
-		$description				= $_POST['description'];
+		$description					= $_POST['description'];
 		$image_product 				= $_FILES['image']['name'];
 					if($image_product != null)
 					{
-					$tmp_name = $_FILES['image']['tmp_name'];
-					$image_product = $_FILES['image']['name'];
+					$tmp_name 			= $_FILES['image']['tmp_name'];
+					$image_product 	= $_FILES['image']['name'];
 
 					move_uploaded_file($tmp_name, "../uploads/".$image_product);
 					$conn = "UPDATE `products` SET `name`='$name_product', `image` = '$image_product',
-										`price`='$price', `description`='$description', `id_cate`='$name_category'
-										WHERE `id_product`='$id_product'";
-					$run = mysqli_query($data, $conn);
+									`price`='$price', `description`='$description', `id_cate`='$name_category'
+									WHERE `id_product`='$id_product'";
+					$run 	= mysqli_query($data, $conn);
 					if($run){
 						$message = "Sửa thành công!";
 						echo '<script language="javascript">alert("Sửa thành công!");

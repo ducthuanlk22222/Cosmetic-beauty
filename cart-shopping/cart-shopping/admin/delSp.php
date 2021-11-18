@@ -4,7 +4,7 @@
   if(isset($_GET['id'])){
     $id = $_GET['id'];
   }
-  $sql = "DELETE FROM `products` WHERE `id_product`='$id'";
+  $sql  = "DELETE FROM `products` WHERE `id_product`='$id'";
 
   if (mysqli_query($data, $sql)) {
     echo '<script language="javascript">alert("Xóa thành công!");
