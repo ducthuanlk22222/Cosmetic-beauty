@@ -1012,7 +1012,7 @@
     .col-3 {width: 25%;}
     .col-4 {width: 33.33%;}
     .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
+    .col-6 {width: 27%;}
     .col-7 {width: 58.33%;}
     .col-8 {width: 66.66%;}
     .col-9 {width: 75%;}
@@ -1412,4 +1412,29 @@
 
 .icons-footer .icon-footer{
     font-size: 2rem;
+}
+
+.about-footer{
+    margin-top: 6px;
+    line-height: 1.5;
+}
+
+.back{
+    margin-top: 1rem;
+    display: flex;
+}
+
+.back .btn-home,.back .btn-DH {
+    padding: 20px 23px;
+}
+
+.back .btn-home{
+    margin-right: 10px;
+}
+
+.back .btn-home:hover, .back .btn-DH:hover{
+    background-color: var(--blue);
+    transition: .3s linear;
+    outline: none;
+    color: #fff;
 }

@@ -1,5 +1,5 @@
 <?php
-    template_header("CHECK ORDER", "index.php?page=home#about", "index.php?page=home#testimonial");
+    template_header("CHECK ORDER", "index.php?page=home#about", "index.php?page=home#testimonial", "index.php?page=products");
     // include "result.php";
 ?>
 

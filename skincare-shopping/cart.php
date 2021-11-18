@@ -1,6 +1,6 @@
 <?php
 include "function-cart.php";
-template_header("CART", "index.php?page=home#about", "index.php?page=home#testimonial");
+template_header("CART", "index.php?page=home#about", "index.php?page=home#testimonial","index.php?page=products");
 ?>
 
 <br>

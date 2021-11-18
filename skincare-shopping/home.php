@@ -1,5 +1,5 @@
 <?php
-template_header("CENLIA", "#about", "#testimonial");
+template_header("CENLIA", "#about", "#testimonial","index.php?page=products");
 // include "config.php";
 ?>
 

@@ -554,9 +554,19 @@ body {
 
 }
 .title{
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 11px;
+	padding:9px;
+	color: red;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title-DM{
+	text-transform: uppercase;
 	text-align: center;
 	margin-top: -20px;
-	padding:30px;
+	padding: 30px;
 	color: red;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -581,6 +591,32 @@ table th {
 	font-weight: bold;
 
 }
+
+th.DM {
+    width: 11%;
+}
+
+th.img {
+    padding-left: 30px;
+}
+
+th.Price {
+    padding-left: 38px;
+}
+
+td.id-product {
+    width: 8%;
+}
+
+td.namecate {
+    padding-left: 41px;
+}
+
+td.price {
+    padding-left: 14px;
+    width: 9.5%;
+}
+
 .tabletd td{
 	border-top: 1px solid white;
 	padding:15px;
@@ -684,4 +720,25 @@ button.btn-back a {
 	text-decoration:none;
 	text-transform: none;
 	
+}
+
+/* css mới */
+th.name-user {
+    padding-left: 62px;
+	width: 14%;
+}
+
+th.address {
+    padding-left: 77px;
+}
+th.email {
+    padding-left: 169px;
+}
+
+th.note {
+    padding-left: 126px;
+}
+
+th.type {
+    padding-left: 92px;
 }

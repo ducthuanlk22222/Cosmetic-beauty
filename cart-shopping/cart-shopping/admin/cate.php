@@ -47,14 +47,14 @@
 					<div>
 						<i class="fas fa-tasks"></i>
 					</div>
-					<span>Cart</span>
+					<span>Hóa Đơn</span>
 				</a>
 			</li>
 		</ul>
 	</div>
 	<div class="wrappers">
     <div class="container mt-5">
-		<h1 class="title">Danh sách danh mục</h1>
+		<h1 class="title-DM">Danh sách danh mục</h1>
 		<div class="card-content1" >
 	 <table id="table">
 		 <thead>

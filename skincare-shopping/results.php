@@ -1,5 +1,5 @@
 <?php
-    template_header("CHECK ORDER", "index.php?page=home#about", "index.php?page=home#testimonial");
+    template_header("CHECK ORDER", "index.php?page=home#about", "index.php?page=home#testimonial", "index.php?page=products");
     include "server/sql_connection.php";
 
     if (isset($_POST['check_order'])){
@@ -22,20 +22,45 @@
 <br>
 <br>
 <hr>
- 
+<style>
+        <?php
+            include "style/style-cart.css";
+        ?>
+</style>
 <div class="container">
     <h1>Đơn hàng có số điện thoại: <?=$phone_number?></h1>
     <?php
+        $count = 0;
+        foreach($query_exec as $row){
+          $count++;
+        }
+
+        if ($count == 0) {
+          ?>
+          <div>
+            <p>Đã có lỗi xảy ra mời bạn thử lại</p>
+            <div class="back">
+
+                <a href="index.php?page=home">
+                  <button class="btn-home">Quay về trang chú</button>
+                </a>
+             
+              
+                <a href="index.php?page=check-orders">
+                  <button class="btn-DH">Kiểm tra lại đơn hàng</button>
+                </a>
+            </div>
+            
+          </div>
+        <?php
+        }
+        else{
         foreach($query_exec as $row):
             $subtotal_price = 0;
             $IDorder = $row['id_order'];
     ?>
     
-    <style>
-        <?php
-            include "style/style-cart.css";
-        ?>
-    </style>
+    
 
     <table>
         <tr>
@@ -85,7 +110,7 @@
             </tr>
         </table>
     </table>
-    <?php endforeach;?>
+    <?php endforeach; }?>
 </div>
 
 <script>

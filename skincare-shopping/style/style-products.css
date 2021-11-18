@@ -9,7 +9,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     list-style-type: none;
     text-decoration: none;
 }
@@ -1090,7 +1090,7 @@ tbody button {
 }
 
 .col-6 {
-    width: 50%;
+    width: 27   %;
 }
 
 .col-7 {

@@ -46,7 +46,7 @@
 					<div>
 						<i class="fas fa-tasks"></i>
 					</div>
-					<span>Cart</span>
+					<span>Hóa Đơn</span>
 				</a>
 			</li>
 		</ul>
@@ -57,24 +57,24 @@
 		 <table class="table">
 			 <thead>
 			   <tr class="tableth">
-				 <th scope="col">ID</th>
-				 <th scope="col">Tên danh mục</th>
-				 <th scope="col">Tên sản phẩm</th>
-				 <th scope="col">Hình ảnh</th>
-				 <th scope="col">Giá</th>
-				 <th scope="col">Chi tiết</th>
+				 <th  scope="col">ID</th>
+				 <th class="DM" scope="col">Tên danh mục</th>
+				 <th  scope="col">Tên sản phẩm</th>
+				 <th class="img" scope="col">Hình ảnh</th>
+				 <th class="Price"  scope="col">Giá</th>
+				 <th  class="CT" scope="col">Chi tiết</th>
 			   </tr>
 			 </thead>
 			 <tbody >
 				 	<?php
 				 		foreach ($product as $value): ?>
 						<tr>
-							<td><?= $value['id_product'] ?></td>
-							<td><?= $value['name_cate'] ?></td>
-							<td><?= $value['name'] ?></td>
-							<td><img src="../uploads/<?= $value['image']?>" alt="" width="100"></td>
-							<td><?= $value['price'] ?> VNĐ</td>
-							<td><?= $value['description'] ?></td>
+							<td class="id-product" ><?= $value['id_product'] ?></td>
+							<td class="namecate"><?= $value['name_cate'] ?></td>
+							<td class="name"><?= $value['name'] ?></td>
+							<td class=""><img src="../uploads/<?= $value['image']?>" alt="" width="100"></td>
+							<td class="price	"><?= $value['price'] ?> VNĐ</td>
+							<td class=""><?= $value['description'] ?></td>
 							<td>
 								<a class="fix-products" href="suaSP.php?id=<?= $value['id_product'] ?>">Sửa</a>
 							</td>

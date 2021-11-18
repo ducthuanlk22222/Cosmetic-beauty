@@ -47,7 +47,7 @@
     $id_order = $result_sql2['id_order'];
 
     // echo count($products);
-    template_header("CONFIRM", "index.php?page=home#about", "index.php?page=home#testimonial");
+    template_header("CONFIRM", "index.php?page=home#about", "index.php?page=home#testimonial", "index.php?page=product");
 ?>
 <style>
     <?php

@@ -1,5 +1,5 @@
 <?php
-    template_header("PRODUCTS", "index.php?page=home#about", "#testimonial");    
+    template_header("PRODUCTS", "index.php?page=home#about", "#testimonial", "index.php?page=products");    
 
     $page = 1;
 

@@ -1,5 +1,5 @@
 <?php
-template_header("Product", "index.php?page=home#about", "index.php?page=home#testimonial");
+template_header("Product", "index.php?page=home#about", "index.php?page=home#testimonial","index.php?page=products");
 
 // Check to make sure the id parameter is specified in the URL
 if (isset($_GET['id_product'])) {

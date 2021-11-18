@@ -66,7 +66,7 @@
 					<div>
 						<i class="fas fa-tasks"></i>
 					</div>
-					<span>Cart</span>
+					<span>Hóa Đơn</span>
 				</a>
 			</li>
 		</ul>

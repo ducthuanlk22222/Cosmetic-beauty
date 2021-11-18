@@ -47,7 +47,7 @@
 					<div>
 						<i class="fas fa-tasks"></i>
 					</div>
-					<span>Cart</span>
+					<span>Hóa Đơn</span>
 				</a>
 			</li>
 		</ul>
@@ -61,17 +61,17 @@
 			 <thead>
 			   <tr class="tableth">
 
-				 <th  scope="col">ID</th>
-				 <th  scope="col">Tên khách hàng</th>
-				 <th  scope="col">Số điện thoại</th>
-				 <th  scope="col">Địa chỉ</th>
-				 <th  scope="col">Email</th>
-				 <th  scope="col">Ghi chú</th>
-				 <th  scope="col">Loại đơn</th>
-				 <th  scope="col">Đơn giá</th>
-				 <th  scope="col">Thời gian</th>
-				 <th  scope="col">Chi tiết</th>
-				 <th  scope="col"></th>
+				 <th class="id" scope="col">ID</th>
+				 <th class="name-user" scope="col">Tên khách hàng</th>
+				 <th class="sdt" scope="col">Số điện thoại</th>
+				 <th class="address" scope="col">Địa chỉ</th>
+				 <th class="email" scope="col">Email</th>
+				 <th class="note" scope="col">Ghi chú</th>
+				 <th class="type" scope="col">Loại đơn</th>
+				 <th class="price-DH" scope="col">Đơn giá</th>
+				 <th class="time" scope="col">Thời gian</th>
+				 <th class="detail" scope="col">Chi tiết</th>
+				 <th class="" scope="col"></th>
 			   </tr>
 			 </thead>
 			 <?php

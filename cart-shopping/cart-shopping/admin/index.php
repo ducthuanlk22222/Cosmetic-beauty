@@ -46,7 +46,7 @@
 					<div>
 						<i class="fas fa-tasks"></i>
 					</div>
-					<span>Cart</span>
+					<span>Hóa Đơn</span>
 				</a>
 			</li>
 
@@ -129,31 +129,31 @@
 											Completed
 										</span>
 									</td>
-									<td>25/10/2021</td>
+									<td>18/11/2021</td>
 								</tr>
 								<tr>
 									<td>2</td>
-									<td>Javascipt</td>
+									<td>PHP-Database</td>
 									<td>Nguyễn Đức Thuận</td>
 									<td>
 										<span class="dot">
-											<i class="bg-warning"></i>
-											In progress
+											<i class="bg-success"></i>
+											Completed
 										</span>
 									</td>
-									<td>25/10/2021</td>
+									<td>18/11/2021</td>
 								</tr>
 								<tr>
 									<td>3</td>
-									<td>PHP</td>
+									<td>PHP-Database</td>
 									<td>Đỗ Kim Phong</td>
 									<td>
 										<span class="dot">
-											<i class="bg-warning"></i>
-											In progress
+											<i class="bg-success"></i>
+											Completed
 										</span>
 									</td>
-									<td>25/10/2021</td>
+									<td>18/11/2021</td>
 								</tr>
 							</tbody>
 						</table>

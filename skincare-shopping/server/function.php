@@ -13,7 +13,7 @@ function pdo_connect_mysql() {
     }
 }
 
-function template_header($title, $info, $testimonial) {
+function template_header($title, $info, $testimonial,$menu) {
     echo <<<EOT
     <!DOCTYPE html>
     <html lang="en">
@@ -147,6 +147,18 @@ function template_header($title, $info, $testimonial) {
             font-size: 2rem;
             margin-left:.5rem;
         }
+
+        .about-footer{
+            margin-top:-88px;
+            line-height:1.5;
+        }
+        .info-shop{
+            margin-bottom:155px;
+        }
+
+        .about-shop{
+            line-height:1.5;
+        }
     </style>
 
     <body class="light">
@@ -166,7 +178,7 @@ function template_header($title, $info, $testimonial) {
                         Thông tin
                     </div>
                 </a>
-                <a href="index.php?page=products">
+                <a href="$menu">
                     <div class="menu-item">
                         Sản phẩm
                     </div>
@@ -285,17 +297,27 @@ function template_footer(){
         <div class="container">
             <h1 class="footer__heading">COSMETIC</h1>
             <div class="row">
-                <div class="col-6 col-xs-12">
+                <div class="about-shop col-6 col-xs-12">
                     <h1> Cosmetic </h1> <br>
                     <p>Mỹ phẩm cao cấp Cenlia sử dụng nguyên liệu 100% từ thiên nhiên Hàn Quốc,
                         tuyệt đối an toàn và hiệu quả cho làn da người Việt</p><br>
                     <p>Email: conian2505@gmail.com</p>
                     <p>Phone: 0908773057</p>
+                    <img src="" >
                     <!-- <p>Website: cenliangoctrinh.vn</p> -->
                 </div>
-                <div class="col-2 col-xs-12">
+
+                <div class="about-footer">
+                    <h1>Chính Sách</h1> <br>
+                    <p>- Chính sách và quy định chung</p>
+                    <p>- Quy định và hình thức thanh toán</p>
+                    <p>- Chính sách vận chuyển</p>
+                    <p>- Chính sách đổi/trả hàng và hoàn tiền</p>
+
+                </div>
+                <div class="info-shop col-2 col-xs-12">
                     <h1>
-                        THÔNG TIN
+                        Thông tin
                     </h1><br>
                     <div class="icons-footer" 
                     <a href="https://www.facebook.com/taidaya4283125/"><i class='icon-footer bx bxl-facebook-circle'></i></a>
